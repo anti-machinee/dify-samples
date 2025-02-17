@@ -44,6 +44,7 @@
 ### Relative URL
 - /meta
 ### Analysis
+- Authorize same as AppParameterApi
 ### Questions
 ## AppInfoApi
 ### HTTP verb
@@ -51,6 +52,7 @@
 ### Relative URL
 - /info
 ### Analysis
+- Authorize same as AppParameterApi
 ### Questions
 
 # audio
