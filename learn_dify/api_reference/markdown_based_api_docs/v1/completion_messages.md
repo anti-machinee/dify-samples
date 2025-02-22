@@ -16,9 +16,7 @@ curl -X POST 'http://localhost:5001/v1/completion-messages' \
 ```bash
 data: {"event": "message", "message_id": "35a68440-3766-40f8-9ce2-b79788072012", "created_at": 1740194075, "task_id": "f9fe6f2c-79c0-4cca-acc5-0bcc67e6cb47", "id": "35a68440-3766-40f8-9ce2-b79788072012", "answer": "public", "from_variable_selector": null}
 
-.........
-
-data: {"event": "message", "message_id": "35a68440-3766-40f8-9ce2-b79788072012", "created_at": 1740194075, "task_id": "f9fe6f2c-79c0-4cca-acc5-0bcc67e6cb47", "id": "35a68440-3766-40f8-9ce2-b79788072012", "answer": "", "from_variable_selector": null}
+.....
 
 data: {
     "event": "message_end",
@@ -84,6 +82,14 @@ curl -X POST 'http://localhost:5001/v1/completion-messages' \
     "created_at": 1740195083
 }
 ```
+## Request body
+### inputs
+### response_mode
+### user
+### files
+## Response
+## Models
+## Errors
 ## Analysis
 - Authorize by token in api_tokens table
 ## Questions
