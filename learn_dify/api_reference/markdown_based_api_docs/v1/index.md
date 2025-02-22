@@ -4,11 +4,7 @@
 ## CURL
 ```bash
 curl \
-    -X GET 'http://localhost:5001/v1'
-```
-## Payload
-```bash
-
+-X GET 'http://localhost:5001/v1'
 ```
 # Output
 ```bash

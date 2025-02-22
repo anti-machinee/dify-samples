@@ -4,12 +4,8 @@
 # CURL
 ```bash
 curl \
-    -X GET 'http://localhost:5001/v1/parameters' \
-    -H 'Authorization: Bearer app-xAOUlilPbi09yywXlGnKP2LW'
-```
-## Payload
-```bash
-
+-X GET 'http://localhost:5001/v1/parameters' \
+-H 'Authorization: Bearer app-xAOUlilPbi09yywXlGnKP2LW'
 ```
 # Output
 ```bash
