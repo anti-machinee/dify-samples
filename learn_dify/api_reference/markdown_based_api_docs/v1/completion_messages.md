@@ -90,7 +90,30 @@ data: {"event": "message", "message_id": "35a68440-3766-40f8-9ce2-b79788072012",
 
 data: {"event": "message", "message_id": "35a68440-3766-40f8-9ce2-b79788072012", "created_at": 1740194075, "task_id": "f9fe6f2c-79c0-4cca-acc5-0bcc67e6cb47", "id": "35a68440-3766-40f8-9ce2-b79788072012", "answer": "", "from_variable_selector": null}
 
-data: {"event": "message_end", "message_id": "35a68440-3766-40f8-9ce2-b79788072012", "created_at": 1740194075, "task_id": "f9fe6f2c-79c0-4cca-acc5-0bcc67e6cb47", "id": "35a68440-3766-40f8-9ce2-b79788072012", "metadata": {"usage": {"prompt_tokens": 66, "prompt_unit_price": "0.003", "prompt_price_unit": "0.001", "prompt_price": "0.0001980", "completion_tokens": 38, "completion_unit_price": "0.004", "completion_price_unit": "0.001", "completion_price": "0.0001520", "total_tokens": 104, "total_price": "0.0003500", "currency": "USD", "latency": 1.1430654770010733}}, "files": null}
+data: {
+    "event": "message_end",
+    "message_id": "35a68440-3766-40f8-9ce2-b79788072012",
+    "created_at": 1740194075,
+    "task_id": "f9fe6f2c-79c0-4cca-acc5-0bcc67e6cb47",
+    "id": "35a68440-3766-40f8-9ce2-b79788072012",
+    "metadata": {
+        "usage": {
+            "prompt_tokens": 66,
+            "prompt_unit_price": "0.003",
+            "prompt_price_unit": "0.001",
+            "prompt_price": "0.0001980",
+            "completion_tokens": 38,
+            "completion_unit_price": "0.004",
+            "completion_price_unit": "0.001",
+            "completion_price": "0.0001520",
+            "total_tokens": 104,
+            "total_price": "0.0003500",
+            "currency": "USD",
+            "latency": 1.1430654770010733
+        }
+    },
+    "files": null
+}
 ```
 ## Request body
 
