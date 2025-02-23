@@ -167,24 +167,23 @@ data: {"event": "message_end", "message_id": "f02165f7-7681-4ac2-b6ca-64d1313b4d
 - Get response of LLM from [AppGenerateService]("../../../../../api/9_services/services_unsorted.md#AppGenerateService")
 - Handle reponse of LLM generator by [compact_generate_response]("../../../../../api/8_libs.md#compact_generate_response")
 ### Response
-#### Success
 - generator or event stream
 - Read for more information [AppGenerateService]("../../../../../api/9_services/services_unsorted.md#AppGenerateService")
 #### Error handling
-- ConversationNotExistsError
+- [ConversationNotExistsError]("../../../../../error/services_error.md#ConversationNotExistsError")
   - NotFound
-- ConversationCompletedError
-  - ConversationCompletedError
-- AppModelConfigBrokenError
-  - AppUnavailableError
-- ProviderTokenNotInitError
-  - ProviderNotInitializeError
-- QuotaExceededError
-  - ProviderQuotaExceededError
-- ModelCurrentlyNotSupportError
-  - ProviderModelCurrentlyNotSupportError
-- InvokeError
-  - CompletionRequestError
+- [ConversationCompletedError]("../../../../../error/services_error.md#ConversationCompletedError")
+  - [ConversationCompletedError]("../../../../../error/services_error.md#ConversationCompletedError")
+- [AppModelConfigBrokenError]("../../../../../error/services_error.md#AppModelConfigBrokenError")
+  - [AppUnavailableError]("../../../../../error/console_error.md#AppUnavailableError")
+- [ProviderTokenNotInitError]("../../../../../error/core_error.md#ProviderTokenNotInitError")
+  - [ProviderNotInitializeError]("../../../../../error/console_error.md#ProviderNotInitializeError")
+- [QuotaExceededError]("../../../../../error/core_error.md#QuotaExceededError")
+  - [ProviderQuotaExceededError]("../../../../../error/console_error.md#ProviderQuotaExceededError")
+- [ModelCurrentlyNotSupportError]("../../../../../error/core_error.md#ModelCurrentlyNotSupportError")
+  - [ProviderModelCurrentlyNotSupportError]("../../../../../error/console_error.md#ProviderModelCurrentlyNotSupportError")
+- [InvokeError]("../../../../../error/core_error.md#InvokeError")
+  - [CompletionRequestError]("../../../../../error/console_error.md#CompletionRequestError")
 - ValueError
   - ValueError
 - Exception
