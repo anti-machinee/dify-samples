@@ -155,18 +155,39 @@ data: {"event": "message", "message_id": "f02165f7-7681-4ac2-b6ca-64d1313b4d74",
 
 data: {"event": "message_end", "message_id": "f02165f7-7681-4ac2-b6ca-64d1313b4d74", "created_at": 1740214934, "task_id": "25d911e2-f35b-4fe3-b779-21448223d45a", "id": "f02165f7-7681-4ac2-b6ca-64d1313b4d74", "metadata": {"usage": {"prompt_tokens": 64, "prompt_unit_price": "0.15", "prompt_price_unit": "0.000001", "prompt_price": "0.0000096", "completion_tokens": 382, "completion_unit_price": "0.60", "completion_price_unit": "0.000001", "completion_price": "0.0002292", "total_tokens": 446, "total_price": "0.0002388", "currency": "USD", "latency": 6.4755935780049185}}, "files": null}
 ```
-## Request body
-### inputs
-### response_mode
-### user
-### files
-## Response
-## Models
-## Errors
 ## Analysis
+### Validation
 - Validate setup by [setup_required]("../../../../../decorators/console_decorators.md#setup_required")
 - Validate login by [login_required]("../../../../../api/8_libs.md#login_required")
 - Validate account initialization by [account_initialization_required]("../../../../../decorators/console_decorators.md#account_initialization_required")
 - Get app model by [get_app_model]("../../../../../decorators/console_decorators.md#get_app_model")
+### Action
+- Check if response mode is streaming or blocking
+- Get current user
+- Get response of LLM from [AppGenerateService]("../../../../../api/9_services/services_unsorted.md#AppGenerateService")
+- Handle reponse of LLM generator by [compact_generate_response]("../../../../../api/8_libs.md#compact_generate_response")
+### Response
+#### Success
+- generator or event stream
+- Read for more information [AppGenerateService]("../../../../../api/9_services/services_unsorted.md#AppGenerateService")
+#### Error handling
+- ConversationNotExistsError
+  - NotFound
+- ConversationCompletedError
+  - ConversationCompletedError
+- AppModelConfigBrokenError
+  - AppUnavailableError
+- ProviderTokenNotInitError
+  - ProviderNotInitializeError
+- QuotaExceededError
+  - ProviderQuotaExceededError
+- ModelCurrentlyNotSupportError
+  - ProviderModelCurrentlyNotSupportError
+- InvokeError
+  - CompletionRequestError
+- ValueError
+  - ValueError
+- Exception
+  - InternalServerError
 ## Questions
 - How/where/when is it used?
