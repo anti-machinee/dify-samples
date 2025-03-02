@@ -5,8 +5,7 @@
 - Form information about the app
 - If app mode is agent chat, update tools
 ### Argument
-#### app
-- This is app model
+- app
 ### Action
 - If app mode is agent chat, process additional steps. Otherwise returns directly
 - Query model config from database

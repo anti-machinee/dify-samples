@@ -4,9 +4,9 @@
 
 ## get_builtin_provider
 ### Arguments
-#### provider
+- provider
 ### Action
-- :oad builtin provider from cache
+- Load builtin provider from cache
 ### Response
 - 
 ### Raise error
@@ -14,9 +14,9 @@
 
 ## get_builtin_tool
 ### Arguments
-#### provider
-#### tool_name
-#### provider
+- provider
+- tool_name
+- provider
 ### Action
 - Get provider controller by provider name
 - Get tool by tool name
@@ -27,12 +27,12 @@
 
 ## get_tool_runtime
 ### Arguments
-#### provider_type
-#### provider_id
-#### tool_name
-#### tenant_id
-#### invoke_from
-#### tool_invoke_from
+- provider_type
+- provider_id
+- tool_name
+- tenant_id
+- invoke_from
+- tool_invoke_from
 ### Action
 - There are 4 types of tools
     - builtin
@@ -59,18 +59,28 @@
 - ValueError
 - NotImplementedError
 
+## _init_runtime_parameter
+### Arguments
+- parameter_rule
+- parameters
+
 ## get_agent_tool_runtime
 ### Arguments
-#### tenant_id
-#### app_id
-#### agent_tool
-#### invoke_from
+- tenant_id
+- app_id
+- agent_tool
+- invoke_from
 ### Action
 - Get tool runtime
 - Get parameters of tool runtime
 - Iterate over tool parameters
-    - 
+    - Raise error if parameter is invalid
+    - Save tool parameter to tool entity memory
+- Init tool encryption manager
+- Decrypt tool parameters
+- Update tool runtime parameters with decrypted parameters
 ### Response
+- Tool runtime updated
 ### Raise error
 - ValueError
 
