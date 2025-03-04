@@ -63,6 +63,16 @@
 ### Arguments
 - parameter_rule
 - parameters
+### Action
+- Retrieve parameter value from parameters
+- If value is missing, assign default value from parameter_rule
+- Raise error if value is missing but required
+- Validate if the tool in the optional list
+- Convert parameter value to the correct type
+### Response
+- Casted value
+### Raise error
+- ValueError
 
 ## get_agent_tool_runtime
 ### Arguments

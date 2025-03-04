@@ -7,7 +7,7 @@
 ### Argument
 - app
 ### Action
-- If app mode is agent chat, process additional steps. Otherwise returns directly
+- If app mode is agent chat, process agent tool steps. Otherwise returns directly
 - Query model config from database
 - Get agent mode
 - Iterating over agent tools

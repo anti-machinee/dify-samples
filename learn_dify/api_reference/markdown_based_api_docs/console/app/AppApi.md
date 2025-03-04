@@ -1,8 +1,7 @@
 # AppApi
 
-## Description
-
 ## Argument
+- App model
 
 ## CURL
 ```bash
@@ -165,5 +164,3 @@ curl 'http://localhost/console/api/apps/13f717a8-aba2-4155-b139-817ca700651f' \
 ### Action
 - Initialize app service
 - Get app model by get_app_model. Remember app model is retrieved from get_app_model decorator
-### Error handling
-- No error handling

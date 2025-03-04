@@ -23,7 +23,8 @@
 
 ## get_runtime_parameters
 ### Action
-- 
+- Get class attributes
+- Can be overridden in subclasses
 
 ## get_all_runtime_parameters
 ### Action

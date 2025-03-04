@@ -1,5 +1,6 @@
 # AgentToolEntity
 ## Description
+- Pydantic model
 ## Used by
 - ModelConfigResource
     - Convert dict to object
