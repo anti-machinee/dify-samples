@@ -26,10 +26,10 @@ curl --location --request POST 'http://localhost/console/api/apps/da1a97da-ba11-
 
 ## Analysis (Same as ChatMessageStopApi)
 ### Validation
-- Validate setup by setup_required
-- Validate login by login_required
-- Validate account initialization by account_initialization_required
-- Get app model by get_app_model
+- Validate setup
+- Validate login
+- Validate account initialization
+- Get app model
 ### Action
 - Set stop flag to task by set_stop_flag
 ### Response

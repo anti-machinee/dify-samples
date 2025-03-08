@@ -153,14 +153,14 @@ curl 'http://localhost/console/api/apps/13f717a8-aba2-4155-b139-817ca700651f' \
 
 ## Analysis
 ### Validation
-- Validate setup by setup_required
-- Validate login by login_required
-- Validate account initialization by account_initialization_required
-- Validate enterprise license by enterprise_license_required
-- Get app model by get_app_model
+- Validate setup
+- Validate login
+- Validate account initialization
+- Validate enterprise license 
+- Get app model
 ### Serialization
 - Serialize the return value into a structured API response format
-- Data and its format of response are defined by  app_detail_fields_with_site
+- Data and its format of response are defined
 ### Action
 - Initialize app service
-- Get app model by get_app_model. Remember app model is retrieved from get_app_model decorator
+- Get app model. Remember app model is retrieved from get_app_model decorator

@@ -173,10 +173,10 @@ data: {"event": "message_end", "message_id": "f02165f7-7681-4ac2-b6ca-64d1313b4d
 
 ## Analysis
 ### Validation
-- Validate setup by setup_required
-- Validate login by login_required
-- Validate account initialization by account_initialization_required
-- Get app model by get_app_model
+- Validate setup
+- Validate login
+- Validate account initialization
+- Get app model
 ### Action
 - Check if response mode is streaming or blocking
 - Get current user

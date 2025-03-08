@@ -1,7 +1,5 @@
 # NameApi
 
-## Description
-
 ## Argument
 
 ## CURL

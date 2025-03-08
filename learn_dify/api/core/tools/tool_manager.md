@@ -90,7 +90,7 @@
 - Decrypt tool parameters
 - Update tool runtime parameters with decrypted parameters
 ### Response
-- Tool runtime updated
+- Tool runtime updated and decrypted
 ### Raise error
 - ValueError
 

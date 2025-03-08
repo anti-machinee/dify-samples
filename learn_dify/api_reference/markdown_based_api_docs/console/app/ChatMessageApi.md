@@ -156,10 +156,10 @@ data: {"event": "message_end", "conversation_id": "0524ffca-4a81-41b9-ac1e-9c529
 
 ## Analysis
 ### Validation (Same as CompletionMessageApi)
-- Validate setup by setup_required
-- Validate login by login_required
-- Validate account initialization by account_initialization_required
-- Get app model by get_app_model
+- Validate setup
+- Validate login
+- Validate account initialization
+- Get app model
 ### Action
 - Check if response mode is streaming or blocking
 - Get current user
