@@ -22,9 +22,6 @@ curl 'http://localhost/console/api/apps/13f717a8-aba2-4155-b139-817ca700651f' \
   -H 'sec-ch-ua-platform: "Windows"'
 ```
 
-## Payload
-- No payload
-
 ## Response
 ```bash
 {
