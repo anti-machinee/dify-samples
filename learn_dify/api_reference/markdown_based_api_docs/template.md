@@ -19,7 +19,7 @@
 
 ## Analysis
 ### Validation
-### Serialization 
+### Serialization
 ### Action
 
 # NameClass
