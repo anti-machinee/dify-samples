@@ -1,0 +1,9 @@
+{
+  "python.analysis.extraPaths": [
+    "${workspaceFolder}/dify/api",
+    "${workspaceFolder}/test_dify"
+  ],
+  "files.watcherExclude": {
+    "**/*": true
+  }
+}

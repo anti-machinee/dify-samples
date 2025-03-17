@@ -1,0 +1,9 @@
+# credentials
+*.env
+
+# learning
+opensources
+tmp
+
+# compiled
+__pycache__
